@@ -1,5 +1,7 @@
 package OopsIsFun;
 
+import encapsulation.EncapsulationIntro;
+
 public class MainClass {
     public static void main(String[] args) {
 
@@ -21,9 +23,11 @@ public class MainClass {
 //        p1.eat();
 //        p2.walk();
 //        p2.walk(2);
+//
+//        Developer d1 = new Developer(24, "Raman");
+//        d1.walk();
 
-        Developer d1 = new Developer(24, "Raman");
-        d1.walk();
+
 
     }
 }
