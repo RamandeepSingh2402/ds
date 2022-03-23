@@ -14,9 +14,23 @@ public class MainClass {
 
         System.out.println(p2.age + " " + p2.name);
 
+        p1.eat();
+        p2.walk();
+        p2.walk(2);
+
+
     }
 }
 class Person{
     int age;
     String name;
+    void walk(){
+        System.out.println(name + " is walking.");
+    }
+    void eat(){
+        System.out.println(name + " is eating.");
+    }
+    void walk(int steps){
+        System.out.println(name + " walked " + steps + " steps.");
+    }
 }
