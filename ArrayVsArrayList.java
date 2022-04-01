@@ -70,5 +70,11 @@ public class ArrayVsArrayList {
         System.out.println(friendsNameArrayList.get(0));
 
 
+        //printing the Array and ArrayList
+        //passing the object of the array in the print statement prints the memory address of the array
+        System.out.println(friendsNameArray);
+
+        //printing the ArrayList
+        System.out.println(friendsNameArrayList);
     }
 }
