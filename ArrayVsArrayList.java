@@ -21,6 +21,11 @@ public class ArrayVsArrayList {
 
         //List<String> demoImmutableList = Arrays.asList("John","Juliano","Eric","Mick");
 
+        /**
+         * THE LIMITATION OF THE ARRAYLIST IS:
+         * CAN ONLY HOLD OBJECTSS
+         * BUT SUPPORTS WRAPPER TYPES FOR PRIMITIVES (USING INTEGER INSTEAD OF int)
+         */
         ArrayList<String> friendsNameArrayList2 =
                 new ArrayList<>(Arrays.asList("John", "Chris", "Eric", "Juliano"));
 
