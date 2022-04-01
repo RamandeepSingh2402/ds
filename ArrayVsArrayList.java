@@ -57,7 +57,18 @@ public class ArrayVsArrayList {
         friendsNameArrayList.set(0,"Carl");
         System.out.println(friendsNameArrayList.get(0));
 
-         
+        //removing elements
+        //can't do that with arrays :(
+
+        //removing elements in Arraylist
+        //removing using index
+        friendsNameArrayList.remove(0);
+
+        //removing using object
+        friendsNameArrayList.remove("Mick");
+
+        System.out.println(friendsNameArrayList.get(0));
+
 
     }
 }
