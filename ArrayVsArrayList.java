@@ -47,5 +47,17 @@ public class ArrayVsArrayList {
         friendsNameArrayList.add("Mitch");
         System.out.println(friendsNameArrayList.get(4));
 
+        //setting elements
+
+        //in array
+        friendsNameArray[0] = "Carl";
+        System.out.println(friendsNameArray[0]);
+
+        //in ArrayList
+        friendsNameArrayList.set(0,"Carl");
+        System.out.println(friendsNameArrayList.get(0));
+
+         
+
     }
 }
