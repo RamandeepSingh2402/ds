@@ -6,11 +6,7 @@ public class ArrayVsArrayList {
     public static void main(String[] args) {
 
         //declaring and initializing the arrays with predefined size, and predefined values as well
-        String[] friendsNameArray = new String[4];
         String[] friendsNameArray2 = {"John", "Chris", "Eric", "Juliano"};
-
-        //declaring and creating an object of an arrayList
-        ArrayList<String> friendsNameArrayList = new ArrayList<>();
 
         /*declaring and initializing an arrayList with predefined values
         Arrays.asList() can be used alone as well, but it gives us immutable list (that we can't alter)
