@@ -5,8 +5,7 @@ public class sub {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the larger number: ");
         int first = in.nextInt();
-        System.out.println(" ");
-        System.out.println("Enter the smaller number: ");
+        System.out.print("\nEnter the smaller number: ");
         int second = in.nextInt();
         Subt sub = new Subt(first, second);
         int result = sub.getSubt();
