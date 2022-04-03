@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class sub {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the first number: ");
+        System.out.print("Enter the larger number: ");
         int first = in.nextInt();
         System.out.println(" ");
-        System.out.println("Enter the second number: ");
+        System.out.println("Enter the smaller number: ");
         int second = in.nextInt();
         Subt sub = new Subt(first, second);
         int result = sub.getSubt();
