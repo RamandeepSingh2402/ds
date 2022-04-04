@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Div {
-    
+
     //main method
     public static void main(String[] args) {
 
@@ -27,12 +27,19 @@ public class Div {
         System.out.println("\nThe result of the division is: " + div.getResult());
     }
 }
+
+//DivResult class
 class DivResult{
+
+    //instance variable
     private int result;
+
+    //constructor of the DivResult class
     public DivResult(int num, int den){
         this.result = num/den;
     }
 
+    //getter method, which returns the integer result of the division
     public int getResult() {
         return result;
     }
