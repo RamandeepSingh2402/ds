@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class Div {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        System.out.print("Kindly enter the integer numerator: ");
         int num = in.nextInt();
+
+        System.out.print("\nKindly enter the integer denominator: ");
         int den = in.nextInt();
 
         DivResult div = new DivResult(num, den);
 
-        System.out.println("The result of the division is:" +div.getResult());
+        System.out.println("\nThe result of the division is: " + div.getResult());
     }
 }
 class DivResult{
