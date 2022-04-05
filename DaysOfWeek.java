@@ -7,9 +7,12 @@ public class DaysOfWeek {
         String fri = "Friday";
         String sat = "Saturday";
         String sun = "Sunday";
-        for (int i = 1; i < 8; i++) {
+        for (int i = 0; i < 7; i++) {
+            if(i==0){
+                System.out.println(i + " " + sun);
+            }
             if(i==1){
-                System.out.println(i + " " + mon);
+                System.out.println(i + " " +mon);
             }
             if(i==2){
                 System.out.println(i + " " +tue);
@@ -25,9 +28,6 @@ public class DaysOfWeek {
             }
             if(i==6){
                 System.out.println(i + " " +sat);
-            }
-            if(i==7){
-                System.out.println(i + " " +sun);
             }
         }
     }
