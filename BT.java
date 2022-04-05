@@ -129,4 +129,12 @@ public class BT<T> {
             preorder(tree.getRight());
         }
     }
+
+    public static<T> void inorder(BT<T> tree){
+        if(tree!=null){
+            inorder(tree.getLeft());
+            System.out.println(tree.getData() + "\t");
+            inorder(tree.getRight());
+        }
+    }
 }
