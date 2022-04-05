@@ -20,4 +20,9 @@ public class BT<T> {
         }
     }
 
+    public void clear(){
+        left = right = parent = null;
+        data = null;
+    }
+
 }
