@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class BinaryTree<T> {
     private T data;
     private BinaryTree<T> parent;
