@@ -85,4 +85,17 @@ public class BT<T> {
             this.setRight(this);
         }
     }
+
+    public BT<T> detachLeft(){
+        if(this.isEmpty()){
+            return null;
+        }
+        BT<T> retLeft = this.left;
+        if(retLeft!=null){
+            retLeft.setParent(null);
+        }
+        return retLeft;
+    }
+
+    
 }
