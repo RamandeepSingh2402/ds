@@ -107,4 +107,18 @@ public class BT<T> {
         }
         return retRight;
     }
+
+    public BT<T> root(){
+        if(this.isEmpty()){
+            return null;
+        }
+        if(this.parent == null){
+            return this;
+        }
+        BT<T> next = this.parent;
+        while(next.getParent()!=null){
+            next = next.getParent();
+        }
+        return next;
+    }
 }
