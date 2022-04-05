@@ -10,5 +10,14 @@ public class BT<T> {
         parent = left= right = null;
         data = null;
     }
-    
+
+    public boolean isEmpty(){
+        if(data==null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
 }
