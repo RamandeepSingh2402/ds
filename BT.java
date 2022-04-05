@@ -7,6 +7,15 @@ public class BT<T> {
         BT<String> E = new BT<>();
         BT<String> F = new BT<>();
         BT<String> G = new BT<>();
+
+        A.makeRoot("A");
+        B.makeRoot("B");
+        C.makeRoot("C");
+        D.makeRoot("D");
+        E.makeRoot("E");
+        F.makeRoot("F");
+        G.makeRoot("G");
+
         
     }
     private T data;
