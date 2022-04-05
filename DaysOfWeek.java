@@ -1,5 +1,6 @@
 public class DaysOfWeek {
     public static void main(String[] args) {
+        System.out.println("The days of the week, with the proposed integer values are as follows: ");
         String mon = "Monday";
         String tue = "Tuesday";
         String wed = "Wednesday";
