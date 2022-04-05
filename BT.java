@@ -12,17 +12,21 @@ public class BT<T> {
     }
 
     public boolean isEmpty(){
-        if(data==null){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return data == null;
     }
 
     public void clear(){
         left = right = parent = null;
         data = null;
+    }
+
+    public void makeRoot(T data){
+        if(!isEmpty()){
+            System.out.println("Can't make root, it already exists.");
+        }
+        else{
+            this.data = data;
+        }
     }
 
 }
