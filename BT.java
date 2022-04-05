@@ -137,4 +137,12 @@ public class BT<T> {
             inorder(tree.getRight());
         }
     }
+
+    public static<T> void postorder(BT<T> tree){
+        if(tree!=null){
+            postorder(tree.getLeft());
+            postorder(tree.getRight());
+            System.out.println(tree.getData());
+        }
+    }
 }
