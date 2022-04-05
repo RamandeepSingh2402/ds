@@ -1,6 +1,13 @@
 public class BT<T> {
     public static void main(String[] args) {
-
+        BT<String> A = new BT<>();
+        BT<String> B = new BT<>();
+        BT<String> C = new BT<>();
+        BT<String> D = new BT<>();
+        BT<String> E = new BT<>();
+        BT<String> F = new BT<>();
+        BT<String> G = new BT<>();
+        
     }
     private T data;
     private BT<T> parent;
@@ -145,4 +152,6 @@ public class BT<T> {
             System.out.println(tree.getData());
         }
     }
+
+
 }
