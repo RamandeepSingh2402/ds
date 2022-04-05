@@ -60,5 +60,16 @@ public class BT<T> {
         return right;
     }
 
-    
+    public void attachLeft(BT<T> tree){
+        if(tree == null){
+            return;
+        }
+        else if(left!=null || tree.getParent()!=null){
+            System.out.println("Can't attach");
+        }
+        else{
+            this.setLeft(tree);
+            tree.setParent(this);
+        }
+    }
 }
