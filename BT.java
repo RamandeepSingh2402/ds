@@ -16,6 +16,13 @@ public class BT<T> {
         F.makeRoot("F");
         G.makeRoot("G");
 
+        A.attachLeft(B);
+        A.attachRight(C);
+        B.attachLeft(D);
+        B.attachRight(E);
+        C.attachLeft(F);
+        C.attachRight(G);
+
         
     }
     private T data;
