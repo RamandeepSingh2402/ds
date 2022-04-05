@@ -23,7 +23,12 @@ public class BT<T> {
         C.attachLeft(F);
         C.attachRight(G);
 
-        
+        System.out.println("Preorder: ");
+        BT.preorder(A);
+        System.out.println("Inorder: ");
+        BT.inorder(A);
+        System.out.println("Postorder: ");
+        BT.postorder(A);
     }
     private T data;
     private BT<T> parent;
