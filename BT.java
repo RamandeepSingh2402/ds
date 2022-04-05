@@ -28,5 +28,21 @@ public class BT<T> {
             this.data = data;
         }
     }
+    public void setData(T data){
+        this.data = data;
+    }
 
+    public void setLeft(BT<T> tree){
+        left = tree;
+    }
+
+    public void setRight(BT<T> tree){
+        right = tree;
+    }
+
+    public void setParent(BT<T> tree){
+        parent = tree;
+    }
+
+    
 }
