@@ -165,18 +165,22 @@ class BinaryTreeDemo{
         BinaryTree<String> D = new BinaryTree<String>();
         BinaryTree<String> E = new BinaryTree<String>();
         BinaryTree<String> F = new BinaryTree<String>();
+        BinaryTree<String> G = new BinaryTree<String>();
         A.makeRoot("A");
         B.makeRoot("B");
         C.makeRoot("C");
         D.makeRoot("D");
         E.makeRoot("E");
         F.makeRoot("F");
+        G.makeRoot("G");
 
         A.attachLeft(B);
         A.attachRight(C);
         B.attachLeft(D);
         B.attachRight(E);
-        D.attachLeft(F);
+        C.attachLeft(F);
+        C.attachRight(G);
+
 
         System.out.println("Preorder:\t");
         BinaryTree.preorder(A);
