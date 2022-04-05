@@ -44,5 +44,21 @@ public class BT<T> {
         parent = tree;
     }
 
+    public T getData(){
+        return data;
+    }
+
+    public BT<T> getParent(){
+        return parent;
+    }
+
+    public BT<T> getLeft(){
+        return left;
+    }
+
+    public BT<T> getRight(){
+        return right;
+    }
+
     
 }
