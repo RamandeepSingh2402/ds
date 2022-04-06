@@ -170,8 +170,14 @@ public class BT<T> {
         }
     }
 }
+
+//BTRunnerClass
 class BTRunner{
+
+    //main method
     public static void main(String[] args) {
+
+        //created all individual Binary Trees
         BT<String> A = new BT<String>();
         BT<String> B = new BT<String>();
         BT<String> C = new BT<>();
@@ -179,6 +185,8 @@ class BTRunner{
         BT<String> E = new BT<>();
         BT<String> F = new BT<>();
         BT<String> G = new BT<>();
+
+        //made roots of each individual String
         A.makeRoot("A");
         B.makeRoot("B");
         C.makeRoot("C");
@@ -187,6 +195,7 @@ class BTRunner{
         F.makeRoot("F");
         G.makeRoot("G");
 
+        //created a single binary tree using all the above nodes
         A.attachLeft(B);
         A.attachRight(C);
         B.attachLeft(D);
@@ -194,7 +203,7 @@ class BTRunner{
         C.attachLeft(F);
         C.attachRight(G);
 
-
+        //executing, and using preorder, inorder, and postorder traversals to print the BinaryTree
         System.out.println("Preorder:\t");
         BT.preOrder(A);
         System.out.println();
