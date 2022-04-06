@@ -1,35 +1,4 @@
 public class BT<T> {
-    public static void main(String[] args) {
-        BT<String> A = new BT<>();
-        BT<String> B = new BT<>();
-        BT<String> C = new BT<>();
-        BT<String> D = new BT<>();
-        BT<String> E = new BT<>();
-        BT<String> F = new BT<>();
-        BT<String> G = new BT<>();
-
-        A.makeRoot("A");
-        B.makeRoot("B");
-        C.makeRoot("C");
-        D.makeRoot("D");
-        E.makeRoot("E");
-        F.makeRoot("F");
-        G.makeRoot("G");
-
-        A.attachLeft(B);
-        A.attachRight(C);
-        B.attachLeft(D);
-        B.attachRight(E);
-        C.attachLeft(F);
-        C.attachRight(G);
-
-        System.out.println("Preorder: ");
-        BT.preorder(A);
-        System.out.println("Inorder: ");
-        BT.inorder(A);
-        System.out.println("Postorder: ");
-        BT.postorder(A);
-    }
     private T data;
     private BT<T> parent;
     private BT<T> left;
@@ -94,6 +63,7 @@ public class BT<T> {
         }
         else if(left!=null || tree.getParent()!=null){
             System.out.println("Can't attach.");
+            return;
         }
         else{
             this.setLeft(tree);
@@ -107,10 +77,11 @@ public class BT<T> {
         }
         else if(right!=null || tree.getParent()!=null){
             System.out.println("Can't attach.");
+            return;
         }
         else{
-            tree.setParent(tree);
-            this.setRight(this);
+            tree.setParent(this);
+            this.setRight(tree);
         }
     }
 
@@ -150,29 +121,64 @@ public class BT<T> {
         return next;
     }
 
-    public static<T> void preorder(BT<T> tree){
+    public static<T> void preOrder(BT<T> tree){
         if(tree!=null){
             System.out.println(tree.getData() + "\t");
-            preorder(tree.getLeft());
-            preorder(tree.getRight());
+            preOrder(tree.getLeft());
+            preOrder(tree.getRight());
         }
     }
 
-    public static<T> void inorder(BT<T> tree){
+    public static<T> void inOrder(BT<T> tree){
         if(tree!=null){
-            inorder(tree.getLeft());
+            inOrder(tree.getLeft());
             System.out.println(tree.getData() + "\t");
-            inorder(tree.getRight());
+            inOrder(tree.getRight());
         }
     }
 
-    public static<T> void postorder(BT<T> tree){
+    public static<T> void postOrder(BT<T> tree){
         if(tree!=null){
-            postorder(tree.getLeft());
-            postorder(tree.getRight());
+            postOrder(tree.getLeft());
+            postOrder(tree.getRight());
             System.out.println(tree.getData());
         }
     }
+}
+class BTRunner{
+    public static void main(String[] args) {
+        BT<String> A = new BT<String>();
+        BT<String> B = new BT<String>();
+        BT<String> C = new BT<>();
+        BT<String> D = new BT<>();
+        BT<String> E = new BT<>();
+        BT<String> F = new BT<>();
+        BT<String> G = new BT<>();
+        A.makeRoot("A");
+        B.makeRoot("B");
+        C.makeRoot("C");
+        D.makeRoot("D");
+        E.makeRoot("E");
+        F.makeRoot("F");
+        G.makeRoot("G");
 
+        A.attachLeft(B);
+        A.attachRight(C);
+        B.attachLeft(D);
+        B.attachRight(E);
+        C.attachLeft(F);
+        C.attachRight(G);
+
+
+        System.out.println("Preorder:\t");
+        BT.preOrder(A);
+        System.out.println();
+        System.out.println("Inorder:\t");
+        BT.inOrder(A);
+        System.out.println();
+        System.out.println("Postorder:\t");
+        BT.postOrder(A);
+        System.out.println();
+    }
 
 }
