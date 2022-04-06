@@ -9,6 +9,10 @@ public class BinaryTree<T> {
         data = null;
     }
 
+    public static<T> void getBFS(BinaryTree<T> root) {
+        
+    }
+
     public boolean isEmpty(){
         if(data==null){
             return true;
@@ -189,5 +193,8 @@ class BinaryTreeDemo{
         System.out.println("Postorder:\t");
         BinaryTree.postorder(A);
         System.out.println();
+
+        BinaryTree.getBFS(A);
+
     }
 }
