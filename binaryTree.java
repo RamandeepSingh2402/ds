@@ -1,6 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class BinaryTree<T> {
     private T data;
@@ -56,6 +54,20 @@ public class BinaryTree<T> {
 //        }
 //    }
 
+    public static<T> void DFS(BinaryTree<T> root){
+        Stack<BinaryTree<T>> stack = new Stack<>();
+        stack.add(root);
+        while(stack.isEmpty()==false){
+            BinaryTree<T> curr = stack.pop();
+            if(curr.right!=null){
+                stack.add(curr.right);
+            }
+            if(curr.left!=null){
+                stack.add(curr.left);
+            }
+            System.out.println(" " + curr.data );
+        }
+    }
     public boolean isEmpty(){
         if(data==null){
             return true;
@@ -236,8 +248,11 @@ class BinaryTreeDemo{
         System.out.println("Postorder:\t");
         BinaryTree.postorder(A);
         System.out.println();
+        BinaryTree.DFS(A);
 
 //        BinaryTree.getBFS(A);
 
     }
 }
+
+
