@@ -7,6 +7,8 @@ public class Arithmetic {
         int second = in.nextInt();
         Sum add = new Sum(first, second);
 
+        Sub sub = new Sub(first,second);
+
         System.out.println("The sum of the two numbers entered by you is: " + add.returnSum());
     }
 }
