@@ -25,3 +25,9 @@ class Sum{
         return this.sum;
     }
 }
+
+class Sub{
+    int first;
+    int second;
+    
+}
