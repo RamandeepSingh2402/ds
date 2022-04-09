@@ -1,3 +1,4 @@
+import java.sql.PseudoColumnUsage;
 import java.util.Scanner;
 
 public class Arithmetic {
@@ -27,7 +28,8 @@ class Sum{
 }
 
 class Sub{
-    int first;
-    int second;
-    
+    int sum;
+    public Sub(int first, int second){
+        sum= first+second;
+    }
 }
