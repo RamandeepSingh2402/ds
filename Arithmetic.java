@@ -11,6 +11,7 @@ public class Arithmetic {
         Sub sub = new Sub(first,second);
 
         System.out.println("The sum of the two numbers entered by you is: " + add.returnSum());
+        
     }
 }
 class Sum{
@@ -30,6 +31,9 @@ class Sum{
 class Sub{
     int sum;
     public Sub(int first, int second){
-        sum= first+second;
+        sum= first-second;
+    }
+    public int returnSub(){
+        return sum;
     }
 }
