@@ -1,39 +1,47 @@
-import java.sql.PseudoColumnUsage;
 import java.util.Scanner;
 
 public class Arithmetic {
+    //main method
     public static void main(String[] args) {
+
+        //importing the scanner class
         Scanner in = new Scanner(System.in);
+
+        //taking in the input of the first integer
         int first = in.nextInt();
+
+        //taking in the input of the second integer
         int second = in.nextInt();
-        Sum add = new Sum(first, second);
 
-        Sub sub = new Sub(first,second);
+        //creating an object of the Sum class, and passing in the values entered by the user
+        Add sum = new Add(first, second);
 
-        System.out.println("The sum of the two numbers entered by you is: " + add.returnSum());
-        System.out.println("The difference of the two numbers entered by you is: " + sub.returnSub());
+        //creating an object of the Sub class, and passing in the values entered by the user
+        Minus sub = new Minus(first,second);
+
+        //printing the sum of the two numbers
+        System.out.println("The sum of the two numbers entered by you is: " + sum.returnAdd());
+
+        //printing the difference of the two numbers
+        System.out.println("The difference of the two numbers entered by you is: " + sub.returnMinus());
     }
 }
-class Sum{
-    int a;
-    int b;
-    int sum;
-    public Sum(int a, int b){
-        this.a = a;
-        this.b = b;
-        this.sum = a + b;
+class Add{
+    int res;
+    public Add(int a, int b){
+        this.res = a + b;
     }
-    public int returnSum(){
-        return this.sum;
+    public int returnAdd(){
+        return res;
     }
 }
 
-class Sub{
+class Minus{
     int sum;
-    public Sub(int first, int second){
+    public Minus(int first, int second){
         sum= first-second;
     }
-    public int returnSub(){
+    public int returnMinus(){
         return sum;
     }
 }
