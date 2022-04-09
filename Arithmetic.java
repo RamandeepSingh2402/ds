@@ -11,7 +11,7 @@ public class Arithmetic {
         Sub sub = new Sub(first,second);
 
         System.out.println("The sum of the two numbers entered by you is: " + add.returnSum());
-        
+        System.out.println("The difference of the two numbers entered by you is: " + sub.returnSub());
     }
 }
 class Sum{
