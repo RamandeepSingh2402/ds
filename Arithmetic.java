@@ -30,9 +30,13 @@ public class Arithmetic {
 class Add{
     //instance variables
     int res;
+
+    //constructor for the Add class
     public Add(int a, int b){
         this.res = a + b;
     }
+
+    //returnAdd() method, which returns the sum of the two numbers
     public int returnAdd(){
         return res;
     }
@@ -41,11 +45,15 @@ class Add{
 //class Minus
 class Minus{
     //instance variables
-    int sum;
+    int diff;
+
+    //constructor for the Minus class
     public Minus(int first, int second){
-        sum= first-second;
+        diff= first-second;
     }
+
+    //returnMinus() method, which returns the difference of the two numbers
     public int returnMinus(){
-        return sum;
+        return diff;
     }
 }
