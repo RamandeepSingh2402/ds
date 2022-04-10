@@ -26,7 +26,9 @@ public class Arithmetic {
         System.out.println("The difference of the two numbers entered by you is: " + sub.returnMinus());
     }
 }
+//class Add
 class Add{
+    
     int res;
     public Add(int a, int b){
         this.res = a + b;
