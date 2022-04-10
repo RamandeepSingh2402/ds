@@ -28,7 +28,7 @@ public class Arithmetic {
 }
 //class Add
 class Add{
-
+    //instance variables
     int res;
     public Add(int a, int b){
         this.res = a + b;
@@ -40,6 +40,7 @@ class Add{
 
 //class Minus
 class Minus{
+    //instance variables
     int sum;
     public Minus(int first, int second){
         sum= first-second;
