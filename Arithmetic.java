@@ -28,7 +28,7 @@ public class Arithmetic {
 }
 //class Add
 class Add{
-    
+
     int res;
     public Add(int a, int b){
         this.res = a + b;
@@ -38,6 +38,7 @@ class Add{
     }
 }
 
+//class Minus
 class Minus{
     int sum;
     public Minus(int first, int second){
