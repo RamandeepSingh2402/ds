@@ -7,7 +7,7 @@ public class Printing5StarsTHen4Then3 {
             //using switch instead of if conditions to check the integer values of i, and print accordingly
             switch (i){
 
-
+                //case in which six stars will be printed
                 case 6:
                     System.out.println("******");
                     break;
