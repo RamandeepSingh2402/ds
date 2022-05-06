@@ -30,6 +30,7 @@ public class Printing1then2then3AndSoOn {
                     System.out.println("*****");
                     break;
 
+                //printing six stars when the value of i is 6
                 case 6:
                     System.out.println("******");
                     break;
