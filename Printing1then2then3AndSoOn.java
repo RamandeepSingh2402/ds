@@ -35,6 +35,7 @@ public class Printing1then2then3AndSoOn {
                     System.out.println("******");
                     break;
 
+                //printing seven stars when the value of is 7
                 case 7:
                     System.out.println("*******");
                     break;
