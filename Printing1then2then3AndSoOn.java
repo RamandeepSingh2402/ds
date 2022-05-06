@@ -33,6 +33,10 @@ public class Printing1then2then3AndSoOn {
                 case 6:
                     System.out.println("******");
                     break;
+
+                case 7:
+                    System.out.println("*******");
+                    break;
             }
         }
     }
