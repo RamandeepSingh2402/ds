@@ -2,7 +2,7 @@ public class Printing1then2then3AndSoOn {
     //main method
     public static void main(String[] args) {
         //using for loop to support printing of the stars
-        for (int i = 0; i <= 6; i++) {
+        for (int i = 0; i <= 7; i++) {
             //switch statement
             switch (i){
                 //printing one star when the value of i is 1
