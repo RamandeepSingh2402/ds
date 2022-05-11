@@ -2,7 +2,7 @@ public class Printing1then2then3AndSoOn {
     //main method
     public static void main(String[] args) {
         //using for loop to support printing of the stars
-        for (int i = 0; i <= 8; i++) {
+        for (int i = 0; i <= 9; i++) {
             //switch statement
             switch (i){
                 //printing one star when the value of i is 1
@@ -43,6 +43,11 @@ public class Printing1then2then3AndSoOn {
                 //printing eight stars when the value of i is 8
                 case 8:
                     System.out.println("********");
+                    break;
+
+                //printing nine stars when the value of i is 9
+                case 9:
+                    System.out.println("*********");
                     break;
             }
         }
