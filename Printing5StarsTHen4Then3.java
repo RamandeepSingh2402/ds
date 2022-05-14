@@ -2,15 +2,21 @@ public class Printing5StarsTHen4Then3 {
     //main method
     public static void main(String[] args) {
         //for loop, used to iterate over the integer values of a variable to print the number of stars in each line
-        for (int i = 8; i >0 ; i--) {
+        for (int i = 9; i >0 ; i--) {
 
             //using switch instead of if conditions to check the integer values of i, and print accordingly
             switch (i){
+
+                //case in which nine stars will be printed
+                case 9:
+                    System.out.println("*********");
+                    break;
 
                 //case in which seven stars will be printed
                 case 8:
                     System.out.println("********");
                     break;
+
                 //case in which seven stars will be printed
                 case 7:
                     System.out.println("*******");
