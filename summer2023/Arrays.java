@@ -53,5 +53,23 @@ public class Arrays {
             System.out.print("\t");
         }
 
+        System.out.println();
+
+        sum(arr);
+        // Class Objects for arrays
+        int intArray[] = new int[3];
+        byte byteArray[] = new byte[3];
+        short shortArray[] = new short[3];
+
+        
+    }
+
+    public static void sum(int[] arr) {
+        int sum = 0;
+
+        for (int i = 0; i< arr.length; i++) {
+            sum+=arr[i];
+        }
+        System.out.println("Sum of arrays: " + sum);
     }
 }
